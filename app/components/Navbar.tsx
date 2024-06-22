@@ -5,7 +5,7 @@ export default function Navbar() {
 	return (
 		<nav className='w-full relative flex items-center justify-between py-5'>
 			<Link href={'/'} className='font-bold text-3xl'>
-				Blog<span className='text-slate-500'>Script</span>
+				Bilim<span className='text-slate-500'>noma</span>
 			</Link>
 			<ModeToggle />
 		</nav>
