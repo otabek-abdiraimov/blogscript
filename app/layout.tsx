@@ -4,6 +4,7 @@ import './globals.css'
 import Navbar from './components/Navbar'
 import { ThemeProvider } from 'next-themes'
 import { Analytics } from '@vercel/analytics/next'
+import Footer from './components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -51,7 +52,7 @@ export const metadata: Metadata = {
 		title: 'BlogScript',
 		description:
 			"Otabek Abdiraimov tomonidan yozilgan maqolalarni o'rganing: samaradorlik, dasturlash, moliyaviy savodxonlik, matematika, fizika va boshqalar.",
-		images: 'https://blog-script.vercel.app/og-image.png',
+		images: '/BlogScript.png',
 	},
 }
 
@@ -73,6 +74,7 @@ export default function RootLayout({
 					<main className='mx-auto px-4 max-w-6xl'>
 						<Navbar />
 						{children}
+						<Footer />
 						<Analytics />
 					</main>
 				</ThemeProvider>
