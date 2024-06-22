@@ -9,7 +9,7 @@ import Footer from './components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-	title: "BlogScript - o'zbek tilida maqolalar",
+	title: "Bilimnoma - o'zbek tilida maqolalar",
 	description:
 		'Otabek Abdiraimov tomonidan yuritiladigan blog. Bu yerda samaradorlik, dasturlash, moliyaviy savodxonlik, matematika, fizika va boshqa mavzularda maqolalarni topishingiz mumkin.',
 	authors: [{ name: 'Otabek Abdiraimov' }],
@@ -27,20 +27,20 @@ export const metadata: Metadata = {
 		'uzbek tilida maqolalar',
 		'wikipedia uzbek',
 	],
-	applicationName: 'BlogScript',
+	applicationName: 'Bilimnoma',
 	generator: 'Next.js',
 	openGraph: {
-		title: 'BlogScript',
+		title: 'Bilimnoma',
 		description:
 			"Samaradorlik, dasturlash, moliyaviy savodxonlik, matematika, fizika va boshqa mavzularda maqolalarni o'rganing.",
 		url: 'https://blog-script.vercel.app',
-		siteName: 'BlogScript',
+		siteName: 'Bilimnoma',
 		images: [
 			{
-				url: '/BlogScript.png',
+				url: '/Bilimnoma.png',
 				width: 800,
 				height: 600,
-				alt: 'BlogScript',
+				alt: 'Bilimnoma',
 			},
 		],
 		locale: 'uz_UZ',
@@ -49,10 +49,10 @@ export const metadata: Metadata = {
 	twitter: {
 		card: 'summary_large_image',
 		site: '@Abdiraimov_',
-		title: 'BlogScript',
+		title: 'Bilimnoma',
 		description:
 			"Otabek Abdiraimov tomonidan yozilgan maqolalarni o'rganing: samaradorlik, dasturlash, moliyaviy savodxonlik, matematika, fizika va boshqalar.",
-		images: '/BlogScript.png',
+		images: '/Bilimnoma.png',
 	},
 }
 
