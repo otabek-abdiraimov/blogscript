@@ -26,7 +26,7 @@ export default async function Home() {
 	return (
 		<div className='grid grid-cols-1 sm:grid-cols-2 gap-5 mt-5'>
 			{data.map((c, idx) => (
-				<Card className='p-3' key={idx}>
+				<Card className='p-3 flex flex-col' key={idx}>
 					<Image
 						src={urlFor(c.titleImage).url()}
 						alt='image'
