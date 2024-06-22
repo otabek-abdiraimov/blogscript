@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from './components/Navbar'
 import { ThemeProvider } from 'next-themes'
+import { Analytics } from '@vercel/analytics/next'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -72,6 +73,7 @@ export default function RootLayout({
 					<main className='mx-auto px-4 max-w-6xl'>
 						<Navbar />
 						{children}
+						<Analytics />
 					</main>
 				</ThemeProvider>
 			</body>
