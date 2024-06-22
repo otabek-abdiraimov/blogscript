@@ -13,12 +13,23 @@ async function getData() {
     title,
       smallDesc,
       "currentSlug": slug.current,
-      titleImage
+      titleImage,
+      _createdAt
   }`
 
 	const data: blogCard[] = await client.fetch(query)
 
 	return data
+}
+
+function formatDate(dateString: string | number | Date) {
+	const date = new Date(dateString)
+	const options: Intl.DateTimeFormatOptions = {
+		year: 'numeric',
+		month: 'long',
+		day: 'numeric',
+	}
+	return date.toLocaleDateString('uz-UZ', options)
 }
 
 export default async function Home() {
@@ -41,6 +52,7 @@ export default async function Home() {
 							<p className='text-sm line-clamp-3 mt-2 text-muted-foreground'>
 								{c.smallDesc}
 							</p>
+							<p className='mt-1'>{formatDate(c._createdAt)}</p>
 							<Button asChild className='w-full mt-7'>
 								<Link href={`/blog/${c.currentSlug}`}>Read more</Link>
 							</Button>

@@ -3,6 +3,7 @@ export interface blogCard {
 	smallDesc: string
 	currentSlug: string
 	titleImage: any
+	_createdAt: any
 }
 
 export interface fullBlog {
