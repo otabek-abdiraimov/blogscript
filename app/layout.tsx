@@ -39,8 +39,8 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: 'Bilimxona',
 		description:
-			"Samaradorlik, dasturlash, moliyaviy savodxonlik, matematika, fizika va boshqa mavzularda maqolalarni o'rganing.",
-		url: 'https://blog-script.vercel.app',
+			"Samaradorlik, dasturlash, moliyaviy savodxonlik, kitoblar va boshqa mavzular haqida maqolalar o'qing.",
+		url: 'https://bilimxona.uz',
 		siteName: 'Bilimxona',
 		images: [
 			{
