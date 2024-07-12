@@ -26,6 +26,13 @@ export const metadata: Metadata = {
 		'uzbek tilida maqola',
 		'uzbek tilida maqolalar',
 		'wikipedia uzbek',
+		'Bilimxona',
+		'Samaradorlik',
+		'bilim',
+		'muvaqqayiyatga erishish',
+		'natija',
+		'kitob',
+		'kitoblar',
 	],
 	applicationName: 'Bilimxona',
 	generator: 'Next.js',
@@ -37,7 +44,7 @@ export const metadata: Metadata = {
 		siteName: 'Bilimxona',
 		images: [
 			{
-				url: '/Bilimxona.png',
+				url: '/Blogscript.png',
 				width: 800,
 				height: 600,
 				alt: 'Bilimxona',
@@ -52,7 +59,7 @@ export const metadata: Metadata = {
 		title: 'Bilimxona',
 		description:
 			"Otabek Abdiraimov tomonidan yozilgan maqolalarni o'rganing: samaradorlik, dasturlash, moliyaviy savodxonlik, matematika, fizika va boshqalar.",
-		images: '/Bilimxona.png',
+		images: '/Blogscript.png',
 	},
 }
 

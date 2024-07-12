@@ -1,5 +1,6 @@
 import { blogCard, fullBlog } from '@/lib/interface'
 import { client, urlFor } from '@/lib/sanity'
+import { Metadata } from 'next'
 import { PortableText } from 'next-sanity'
 import Image from 'next/image'
 
@@ -20,6 +21,16 @@ async function getData(slug: string) {
 	return data
 }
 
+export async function generateMetadata({
+	params: { slug },
+}: {
+	params: { slug: string }
+}): Promise<Metadata> {
+	const data = await getData(slug)
+	return {
+		title: data.title,
+	}
+}
 export default async function SingleBlogPage({
 	params,
 }: {
