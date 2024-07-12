@@ -29,6 +29,7 @@ export async function generateMetadata({
 	const data = await getData(slug)
 	return {
 		title: data.title,
+		description: data.smallDesc,
 	}
 }
 export default async function SingleBlogPage({
