@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 async function About() {
 	return (
-		<div className='max-w-6xl mx-auto'>
+		<div className='container mx-auto max-w-6xl mx-auto'>
 			<h1 className='font-bold text-center sm:text-4xl md:mb-8 md:text-5xl mt-10'>
 				Bilimxona
 			</h1>

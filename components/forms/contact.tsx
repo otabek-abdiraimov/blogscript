@@ -116,7 +116,7 @@ Message: ${values.message}
 							</FormItem>
 						)}
 					/>
-					<Button disabled={isLoading} className='w-fit' size={'lg'}>
+					<Button disabled={isLoading} className='w-full md:w-fit' size={'lg'}>
 						<span>Send</span>
 						<Send className='w-4 h-4' />
 					</Button>

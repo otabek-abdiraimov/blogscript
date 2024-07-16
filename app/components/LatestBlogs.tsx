@@ -42,7 +42,7 @@ export default async function LatestBlogs() {
 			</h1>
 			<div className='flex flex-col gap-y-4'>
 				{data.slice(0, 2).map((c, idx) => (
-					<Card key={idx} className='flex w-full p-3'>
+					<Card key={idx} className='flex flex-col md:flex-row w-full p-3'>
 						<Image
 							src={urlFor(c.titleImage).url()}
 							alt='image'
@@ -50,13 +50,13 @@ export default async function LatestBlogs() {
 							height={500}
 							className='object-cover rounded-md'
 						/>
-						<CardContent>
+						<CardContent className='!p-0 md:!p-6 mt-4 md:mt-0'>
 							<h1 className='!text-start font-bold text-xl'>{c.title}</h1>
 							<p className='text-sm line-clamp-3 mt-2 text-muted-foreground'>
 								{c.smallDesc}
 							</p>
 							<p className='mt-1'>{formatDate(c._createdAt)}</p>
-							<Button asChild className='w-fit mt-7'>
+							<Button asChild className='w-full md:w-fit mt-7'>
 								<Link href={`/blog/${c.currentSlug}`}>Read more</Link>
 							</Button>
 						</CardContent>
