@@ -50,7 +50,7 @@ export const metadata: Metadata = {
 		siteName: 'Bilimxona',
 		images: [
 			{
-				url: '/BlogScript.png',
+				url: 'https://bilimxona.uz/BlogScript.png',
 				width: 800,
 				height: 600,
 				alt: 'Bilimxona',
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
 		title: 'Bilimxona',
 		description:
 			"Otabek Abdiraimov tomonidan yozilgan maqolalarni o'rganing: samaradorlik, dasturlash, moliyaviy savodxonlik, matematika, fizika va boshqalar.",
-		images: '/BlogScript.png',
+		images: 'https://bilimxona.uz/BlogScript.png',
 	},
 }
 
@@ -77,6 +77,32 @@ export default function RootLayout({
 			<head>
 				<link rel='icon' href='/favicon.ico' />
 				<link rel='canonical' href='https://bilimxona.uz' />
+				<meta property='og:title' content='Bilimxona' />
+				<meta
+					property='og:description'
+					content="Samaradorlik, dasturlash, moliyaviy savodxonlik, kitoblar va boshqa mavzular haqida maqolalar o'qing."
+				/>
+				<meta property='og:url' content='https://bilimxona.uz' />
+				<meta property='og:site_name' content='Bilimxona' />
+				<meta
+					property='og:image'
+					content='https://bilimxona.uz/BlogScript.png'
+				/>
+				<meta property='og:image:width' content='800' />
+				<meta property='og:image:height' content='600' />
+				<meta property='og:locale' content='uz_UZ' />
+				<meta property='og:type' content='website' />
+				<meta name='twitter:card' content='summary_large_image' />
+				<meta name='twitter:site' content='@Abdiraimov_' />
+				<meta name='twitter:title' content='Bilimxona' />
+				<meta
+					name='twitter:description'
+					content="Otabek Abdiraimov tomonidan yozilgan maqolalarni o'rganing: samaradorlik, dasturlash, moliyaviy savodxonlik, matematika, fizika va boshqalar."
+				/>
+				<meta
+					name='twitter:image'
+					content='https://bilimxona.uz/BlogScript.png'
+				/>
 			</head>
 			<body>
 				<ThemeProvider
