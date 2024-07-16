@@ -7,6 +7,7 @@ export interface blogCard {
 }
 
 export interface fullBlog {
+	_createdAt: any
 	title: string
 	currentSlug: string
 	titleImage: any

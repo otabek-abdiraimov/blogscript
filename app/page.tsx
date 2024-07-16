@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { blogCard } from '@/lib/interface'
 import { client, urlFor } from '@/lib/sanity'
+import { Redis } from '@upstash/redis'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -32,8 +33,12 @@ function formatDate(dateString: string | number | Date) {
 	return date.toLocaleDateString('uz-UZ', options)
 }
 
+const redis = Redis.fromEnv()
+
 export default async function Home() {
 	const data = await getData()
+
+	const views = await redis.mget<number[]>(['pageviews', 'posts'].join(':'))
 
 	return (
 		<div>
@@ -52,7 +57,9 @@ export default async function Home() {
 							<p className='text-sm line-clamp-3 mt-2 text-muted-foreground'>
 								{c.smallDesc}
 							</p>
-							<p className='mt-1'>{formatDate(c._createdAt)}</p>
+							<div>
+								<p className='mt-1'>{formatDate(c._createdAt)}</p>
+							</div>
 							<Button asChild className='w-full mt-7'>
 								<Link href={`/blog/${c.currentSlug}`}>Read more</Link>
 							</Button>
