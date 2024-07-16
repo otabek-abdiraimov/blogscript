@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 async function About() {
 	return (
-		<div className='container mx-auto max-w-6xl mx-auto'>
+		<div className='container mx-auto max-w-6xl'>
 			<h1 className='font-bold text-center sm:text-4xl md:mb-8 md:text-5xl mt-10'>
 				Bilimxona
 			</h1>
@@ -42,7 +42,7 @@ async function About() {
 				</p>
 			</div>
 
-			<h1 className='font-bold text-center sm:text-4xl md:mb-8 md:text-5xl mt-10'>
+			<h1 className='font-bold text-center text-2xl mb-3 sm:text-4xl md:mb-8 md:text-5xl mt-10'>
 				Maqolalar yozuvchisi
 			</h1>
 
@@ -50,7 +50,7 @@ async function About() {
 				<Image
 					src={'/author.jpg'}
 					alt='author'
-					width={250}
+					width={350}
 					height={500}
 					className='rounded-xl grayscale hover:grayscale-0 cursor-pointer transition-all duration-500'
 				/>
